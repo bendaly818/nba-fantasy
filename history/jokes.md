@@ -16,3 +16,4 @@
 - Cucky/Vishal: Cucky won by 200.75 with a 65.5 last day (led by 374.25 going in); Vishal only eight scoring players, Mobley "cry for help".
 - Awards: Wemby POW; Cucky blowout (3.0 over ****'s 197.75); Hard Luck DaddyDunco; Schedule Gods Shaqramento; Biggest Day ****; Floor Wild Metti.
 - Note: every team scored 0.0 on Nov 3 (flagged in page footnote).
+- Week 3 intensity pass: buffet/food-poisoning (DaddyDunco), "medical event" (Shaq 13.5), "business model" (Metti), "cry for help" (Mobley), "hostage video" (Jokic+Mitchell), "undefeated and mediocre" (Edgelord).
