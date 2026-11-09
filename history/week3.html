@@ -179,17 +179,24 @@ function render(w) {
 render(WEEK);
 (async () => {
   const a = document.getElementById('pdfdl');
-  try {
-    const dl = await claude.use('downloads');
-    if (!dl) { if (a) a.href = '/_blob/c4535f581684cc280c43d8aaf255df03'; return; }
-    a.addEventListener('click', async e => {
-      e.preventDefault();
-      try {
-        const buf = await (await fetch('/_blob/c4535f581684cc280c43d8aaf255df03')).arrayBuffer();
-        await dl.save({ filename: 'matchup-roast-week3.pdf', data: new Uint8Array(buf) });
-      } catch (err) { a.textContent = 'Download unavailable'; }
-    });
-  } catch (err) { if (a) a.href = '/_blob/c4535f581684cc280c43d8aaf255df03'; }
+  if (!a) return;
+  const url = '/_blob/c4535f581684cc280c43d8aaf255df03';
+  a.href = url; a.target = '_blank'; a.rel = 'noopener';
+  let dl = null;
+  try { dl = await claude.use('downloads'); } catch (err) {}
+  if (!dl) return;
+  a.addEventListener('click', async e => {
+    e.preventDefault();
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error('fetch ' + r.status);
+      const blob = await r.blob();
+      await dl.save({ filename: 'matchup-roast-week3.pdf', data: blob });
+    } catch (err) {
+      if (err && err.code === 'declined') return;
+      window.open(url, '_blank');
+    }
+  });
 })();
 </script>
 
