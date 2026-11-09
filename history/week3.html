@@ -1,0 +1,196 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>LePhilly Matchup Roast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #151412; --fg: #F2EDE3; --muted: #A8A092; --rule: #F2EDE3; --red: #E4503A; --red-fg: #151412;
+  --block-bg: #F2EDE3; --block-fg: #151412; --block-accent: #B32A16; --track: #35322C;
+  --display: 'Anton', 'Impact', sans-serif; --label: 'Barlow Condensed', 'Arial Narrow', sans-serif; --body: 'Barlow', system-ui, sans-serif;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
+  --bg: #F2EDE3; --fg: #121212; --muted: #555048; --rule: #121212; --red: #D2361F; --red-fg: #FFFFFF;
+  --block-bg: #121212; --block-fg: #F2EDE3; --block-accent: #FFD84A; --track: #D9D2C3; color-scheme: light;
+}
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); }
+* { box-sizing: border-box; }
+.page { max-width: 1080px; margin: 0 auto; padding: 40px 16px 48px; display: flex; flex-direction: column; gap: 40px; }
+.num { font-variant-numeric: tabular-nums; }
+.masthead { display: flex; flex-direction: column; gap: 10px; border-bottom: 6px solid var(--rule); padding-bottom: 26px; }
+.topline { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; font: 700 clamp(15px, 2.6vw, 26px)/1.1 var(--label); letter-spacing: 3px; text-transform: uppercase; }
+.stamp { background: var(--block-bg); color: var(--block-fg); padding: 6px 14px; }
+h1 { margin: 8px 0 0; font: 400 clamp(56px, 14vw, 150px)/0.92 var(--display); letter-spacing: -1px; text-transform: uppercase; text-wrap: balance; }
+.dek { font: 600 clamp(19px, 2.8vw, 30px)/1.25 var(--label); max-width: 900px; }
+h2.sec { margin: 0; font: 700 clamp(15px, 2vw, 20px)/1 var(--label); letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.section { display: flex; flex-direction: column; gap: 18px; }
+.bout { border-top: 4px solid var(--rule); padding-top: 16px; display: flex; flex-direction: column; gap: 14px; }
+.bout-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; font: 700 clamp(15px, 2vw, 20px)/1 var(--label); letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+.badge { background: var(--red); color: var(--red-fg); padding: 4px 10px; letter-spacing: 2px; }
+.badge.dark { background: var(--block-bg); color: var(--block-accent); }
+.side { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; row-gap: 6px; align-items: end; }
+.team { font: 800 clamp(26px, 5vw, 44px)/1 var(--label); text-transform: uppercase; overflow-wrap: anywhere; }
+.pts { font: 400 clamp(36px, 7vw, 68px)/1 var(--display); text-align: right; }
+.side.lose .team, .side.lose .pts { color: var(--muted); }
+.tag { font: 700 0.55em/1 var(--label); letter-spacing: 2px; padding: 3px 8px; margin-right: 10px; vertical-align: middle; background: var(--block-bg); color: var(--block-accent); }
+.side.lose .tag { background: transparent; border: 2px solid var(--muted); color: var(--muted); }
+.track { grid-column: 1 / -1; height: 10px; background: var(--track); }
+.track i { display: block; height: 100%; background: var(--fg); }
+.side.lose .track i { background: var(--muted); }
+.stars { font: 600 clamp(15px, 1.9vw, 19px)/1.3 var(--label); letter-spacing: 1px; text-transform: uppercase; color: var(--muted); grid-column: 1 / -1; }
+.stars b { color: var(--fg); font-weight: 700; }
+.roast { font-size: clamp(17px, 2.2vw, 21px); line-height: 1.4; max-width: 70ch; margin: 4px 0 0; }
+.roast b { font-weight: 600; }
+.awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+.award { padding: 22px 24px; display: flex; flex-direction: column; gap: 6px; border: 4px solid var(--rule); min-width: 0; }
+.award.ink { background: var(--block-bg); color: var(--block-fg); border-color: var(--block-bg); }
+.award.ink .kicker { color: var(--block-accent); }
+.award.red { background: var(--red); color: var(--red-fg); border-color: var(--red); }
+.award.red .kicker { color: inherit; }
+.kicker { font: 700 clamp(15px, 1.9vw, 20px)/1.1 var(--label); letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.award .big { font: 400 clamp(28px, 4.6vw, 44px)/1.05 var(--display); text-transform: uppercase; overflow-wrap: anywhere; }
+.award p { margin: 0; font-size: clamp(16px, 2vw, 21px); line-height: 1.35; }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 560px; }
+th { font: 700 clamp(14px, 1.8vw, 20px)/1 var(--label); letter-spacing: 2px; text-transform: uppercase; color: var(--muted); text-align: right; padding: 0 8px 10px; }
+th:nth-child(1), th:nth-child(2) { text-align: left; }
+td { border-top: 2px solid var(--rule); padding: 12px 8px; text-align: right; font: 700 clamp(20px, 2.6vw, 30px)/1 var(--label); white-space: nowrap; }
+td.rk { text-align: left; font: 400 clamp(26px, 3.4vw, 40px)/1 var(--display); width: 56px; }
+td.nm { text-align: left; font-weight: 800; text-transform: uppercase; white-space: normal; }
+td.nm small { display: block; font: 500 clamp(14px, 1.7vw, 18px)/1.3 var(--body); text-transform: none; color: var(--muted); margin-top: 4px; }
+.up { color: var(--fg); } .dn { color: var(--red); }
+tr:last-child td { border-bottom: 2px solid var(--rule); }
+.live { background: var(--block-bg); color: var(--block-fg); padding: 24px 26px; display: flex; flex-direction: column; gap: 14px; }
+.live .kicker { color: var(--block-accent); }
+.liverow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 12px; align-items: center; border-top: 1px solid color-mix(in srgb, var(--block-fg) 30%, transparent); padding-top: 12px; font: 700 clamp(17px, 2.4vw, 26px)/1.1 var(--label); text-transform: uppercase; }
+.liverow .l { text-align: left; } .liverow .r { text-align: right; }
+.liverow .mid { font: 400 clamp(18px, 2.6vw, 28px)/1 var(--display); text-align: center; letter-spacing: 0; }
+.liverow .lead { color: var(--block-accent); }
+.liverow small { display: block; font: 500 14px/1.2 var(--body); text-transform: none; opacity: .75; margin-top: 3px; }
+.foot { font-size: 16px; line-height: 1.45; color: var(--muted); border-top: 2px solid var(--rule); padding-top: 14px; }
+@page { size: 1080px 1500px; margin: 0; }
+@media print {
+  html, body { margin: 0; padding: 0; background: var(--bg); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { max-width: none; padding: 48px 56px; }
+  .bout, .award, .liverow, tr { break-inside: avoid; }
+  .noprint { display: none !important; }
+}
+@media (max-width: 520px) {
+  .liverow { grid-template-columns: 1fr; gap: 4px; }
+  .liverow .l, .liverow .r, .liverow .mid { text-align: left; }
+}
+</style>
+
+<main class="page" id="app"></main>
+
+<script>
+const WEEK = {
+  league: 'RWB 26–27 · "LePhilly Dreams"',
+  weekNo: 3,
+  dates: 'Nov 2 – Nov 8',
+  edition: 'Final Scores',
+  dek: 'Matchup 3 is final. **** dropped 1,615.00 and flattened DaddyDunco by 197.75, DaddyDunco scored 1,417.25 (second-best in the league) and is now 1-2, and Wild Metti went 0-9 against the field for the second week running.',
+  matchups: [
+    { win: { team: 'Edgelord', pts: 1356, stars: [['Bam Adebayo', 228.25], ['Tyrese Maxey', 211]] },
+      lose: { team: "Karl-Anthony's Clowns", pts: 1196.25, stars: [['Devin Booker', 195], ['Karl-Anthony Towns', 170]] },
+      badge: 'Clean win', badgeDark: true,
+      roast: 'Edgelord is the only 3-0 team in the league and sat fifth in points this week with <b>1,356.00</b>, all-play 5-4. The spreadsheet is undefeated and mediocre at the same time. The Clowns got <b>78.50</b> from Joel Embiid and <b>61.50</b> from last week\'s 168-point Jalen Johnson, and lost by <b>159.75</b>. Booker and Towns gave them 365.0 between them and the other nine scorers combined for <b>831.25</b>, against <b>916.75</b> from Edgelord\'s non-stars.' },
+    { win: { team: 'Halibarn', pts: 1395.75, stars: [['Giannis Antetokounmpo', 262.5], ['LeBron James', 164.25]] },
+      lose: { team: 'Neck like Charlie Kirk', pts: 1383.75, stars: [['Jaylen Brown', 232.25], ['Jalen Brunson', 170]] },
+      badge: 'Nail-biter', badgeDark: false,
+      roast: 'Decided by <b>12.0</b>. Neck lost it on Nov 5, when it posted <b>68.75</b> against Halibarn\'s <b>161.5</b>, a 92.75 gap that is nearly eight times the final margin. Neck had the fourth-best score of ten and still lost, with Tatum chipping in <b>169.0</b>. Halibarn, formerly Blocked By James, got <b>164.25</b> from an unblocked LeBron and Giannis at 262.5. It took both of them to scrape past by 12.' },
+    { win: { team: 'Shaqramento Wings', pts: 1185, stars: [['Shai Gilgeous-Alexander', 261.25], ['Rudy Gobert', 157]] },
+      lose: { team: 'Wild Metti', pts: 1128.25, stars: [['Cooper Flagg', 225.25], ['Austin Reaves', 210.5]] },
+      badge: 'Held on', badgeDark: false,
+      roast: 'Shaqramento won with the eighth-best score of ten and a <b>13.5</b> on Nov 5, the lowest non-zero day in the league. Metti even won the final day by <b>0.25</b> (166.25 to 166.0) and still lost the week by 56.75, so Shaqramento took its first win of the season off the lowest score in the league. Metti\'s top two scored 435.75 to Shaq\'s 418.25 and it still lost; the rest of the roster contributed 692.5 against 766.75. Metti is 0-3.' },
+    { win: { team: '****', pts: 1615, stars: [['Victor Wembanyama', 297.5], ['Miles Bridges', 218]] },
+      lose: { team: 'DaddyDunco', pts: 1417.25, stars: [['Nikola Jokic', 237.5], ['Donovan Mitchell', 216.25]] },
+      badge: 'Statement', badgeDark: true,
+      roast: '**** posted the week\'s top score, the biggest day (<b>362.25</b> on Nov 4) and the top player (Wemby, 297.5). DaddyDunco scored <b>1,417.25</b>, the second-highest total, would have beaten eight of the other nine teams, and lost to the one that was always going to beat it. It now leads the league in points for at 4,431.50 and is <b>1-2</b>. Points are not wins, and the league standings keep reminding it.' },
+    { win: { team: 'Fourth time Cucky', pts: 1337, stars: [['Luka Doncic', 250.25], ['Deni Avdija', 190.25]] },
+      lose: { team: "Vishal's Spirited Team", pts: 1136.25, stars: [['Evan Mobley', 184.75], ['Cade Cunningham', 178.25]] },
+      badge: 'Walkover', badgeDark: false,
+      roast: 'Cucky\'s final day was a miserable <b>65.5</b> against Vishal\'s <b>239.0</b>, and it still won by 200.75. It led by 374.25 going into Nov 8, built on a <b>347.25</b> day on Nov 6. Vishal had only eight players on the scoreboard and finished with the ninth-best score of ten. Evan Mobley\'s 184.75 as its best player is not a leading scorer, it is a cry for help.' }
+  ],
+  awards: [
+    { cls: 'ink', kicker: 'Player of the Week', big: 'Victor Wembanyama', text: '297.50 points for ****, 35.0 clear of the next-best Giannis (262.5). The best player in the league had the best team in the league, which is the only way this game is supposed to work.' },
+    { cls: 'red', kicker: 'Blowout', big: 'Cucky over Vishal', text: '200.75 points, 3.0 bigger than **** over DaddyDunco (197.75). The Nail-biter was Halibarn over Neck by 12.0.' },
+    { cls: '', kicker: 'Hard Luck', big: 'DaddyDunco', text: '1,417.25 was the second-highest score of the week and all-play 8-1, and it lost by 197.75 anyway. Leads the league in points for and is 1-2.' },
+    { cls: '', kicker: 'Schedule Gods', big: 'Shaqramento Wings', text: 'Eighth-best score of ten, all-play 2-7, and a win. It beat the only team it was always going to beat. Thank Wild Metti, not the roster.' },
+    { cls: '', kicker: 'Biggest Day', big: '****', text: '362.25 on Nov 4, the biggest single day in the league. 9.25 more than Halibarn\'s 353.0 on the same day, the second-biggest of the week. Both teams peaked on Nov 4; only one of them is 9-0 in all-play.' },
+    { cls: '', kicker: 'Floor of the Week', big: 'Wild Metti', text: 'Lowest score in the league at 1,128.25, all-play 0-9 for the second straight week, 0-3 on the season. Even with Nov 3 scoring 0.0 for everyone, nobody could catch it up.' }
+  ],
+  standingsNote: 'Ranked by season points for as ESPN reports them, through the end of matchup 3. Record is ESPN\'s overall record. All-play is this week\'s final scores only: each team against the other nine. Every team scored 0.0 on Nov 3.',
+  standings: [
+    { team: 'DaddyDunco', rec: '1-2', pf: 4431.5, ap: '8-1', note: 'First in points, 1-2. The league\'s most expensive losing record' },
+    { team: 'Neck like Charlie Kirk', rec: '2-1', pf: 4196.25, ap: '6-3', note: 'Lost by 12.0 and still second in points' },
+    { team: '****', rec: '2-1', pf: 4182.75, ap: '9-0', note: 'Wemby and a 9-0 all-play, but it is 2-1 and not first' },
+    { team: 'Fourth time Cucky', rec: '2-1', pf: 3999.75, ap: '4-5', note: 'Won by 200.75 off a 65.5 last day' },
+    { team: 'Edgelord', rec: '3-0', pf: 3978, ap: '5-4', note: 'The only 3-0, fifth in points. Run the spreadsheet again' },
+    { team: 'Halibarn', rec: '2-1', pf: 3659.75, ap: '7-2', note: 'Won by 12.0, and the name no longer fits' },
+    { team: "Karl-Anthony's Clowns", rec: '1-2', pf: 3651, ap: '3-6', note: 'Embiid at 78.5 for the week' },
+    { team: 'Shaqramento Wings', rec: '1-2', pf: 3594, ap: '2-7', note: '13.5 on Nov 5 and still got a win' },
+    { team: "Vishal's Spirited Team", rec: '1-2', pf: 3267.75, ap: '1-8', note: 'Second-lowest score of the week' },
+    { team: 'Wild Metti', rec: '0-3', pf: 3211.25, ap: '0-9', note: 'Last in points, all-play 0-9, 0-3' }
+  ],
+  footnote: 'Scores are ESPN\'s final totals for matchup period 3 (scoring days Nov 2 to Nov 8); all five games show a decided winner. Every team scored 0.0 on Nov 3, which looks like a day with no scoring rather than a data error. Player totals are full-week fantasy points from the box score. <span class="noprint"><a href="#" id="pdfdl" style="color:var(--fg)">Download the Week 3 PDF</a>.</span>'
+};
+
+/* ============ renderer ============ */
+const f = n => n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+function bout(m, i) {
+  const max = Math.max(m.win.pts, m.lose.pts);
+  const margin = m.win.pts - m.lose.pts;
+  const stars = s => s.stars.map(x => `<b>${x[0]}</b> ${f(x[1])}`).join(' &nbsp;·&nbsp; ');
+  const side = (s, cls, tag) => `
+    <div class="side ${cls}">
+      <div class="team"><span class="tag">${tag}</span>${s.team}</div>
+      <div class="pts num">${f(s.pts)}</div>
+      <div class="track"><i style="width:${(s.pts / max * 100).toFixed(1)}%"></i></div>
+      <div class="stars">${stars(s)}</div>
+    </div>`;
+  return `
+  <article class="bout">
+    <div class="bout-head"><span>Matchup ${i + 1} · Won by <span class="num">${f(margin)}</span></span><span class="badge ${m.badgeDark ? 'dark' : ''}">${m.badge}</span></div>
+    ${side(m.win, 'win', 'W')}
+    ${side(m.lose, 'lose', 'L')}
+    <p class="roast">${m.roast}</p>
+  </article>`;
+}
+function render(w) {
+  const rows = w.standings.map((s, i) => `
+    <tr><td class="rk">${i + 1}</td>
+    <td class="nm">${s.team}<small>${s.note}</small></td>
+    <td class="num">${s.rec}</td><td class="num">${f(s.pf)}</td><td class="num">${s.ap}</td></tr>`).join('');
+  document.getElementById('app').innerHTML = `
+  <header class="masthead">
+    <div class="topline"><span>${w.league}</span><span class="stamp">Week ${w.weekNo} · ${w.dates}</span></div>
+    <h1>Matchup<br>Roast</h1>
+    <div class="dek">${w.dek}</div>
+  </header>
+  <section class="section"><h2 class="sec">The Scoreboard · ${w.edition}</h2>${w.matchups.map(bout).join('')}</section>
+  <section class="section"><h2 class="sec">The Hardware</h2>
+    <div class="awards">${w.awards.map(a => `<div class="award ${a.cls}"><span class="kicker">${a.kicker}</span><span class="big">${a.big}</span><p>${a.text}</p></div>`).join('')}</div></section>
+  <section class="section"><h2 class="sec">Power Rankings</h2>
+    <div class="tablewrap"><table><thead><tr><th>#</th><th>Team</th><th>Record</th><th>Points</th><th>All-play</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="foot" style="border:0;padding:0">${w.standingsNote}</p></section>
+  <div class="foot">${w.footnote}</div>`;
+}
+render(WEEK);
+(async () => {
+  const a = document.getElementById('pdfdl');
+  try {
+    const dl = await claude.use('downloads');
+    if (!dl) { if (a) a.href = '/_blob/a32e4ed48fcf055d1d06ec07a8a16702'; return; }
+    a.addEventListener('click', async e => {
+      e.preventDefault();
+      try {
+        const buf = await (await fetch('/_blob/a32e4ed48fcf055d1d06ec07a8a16702')).arrayBuffer();
+        await dl.save({ filename: 'matchup-roast-week3.pdf', data: new Uint8Array(buf) });
+      } catch (err) { a.textContent = 'Download unavailable'; }
+    });
+  } catch (err) { if (a) a.href = '/_blob/a32e4ed48fcf055d1d06ec07a8a16702'; }
+})();
+</script>
+
+</body></html>
