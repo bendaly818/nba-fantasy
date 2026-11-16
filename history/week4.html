@@ -93,7 +93,7 @@ const WEEK = {
     { win: { team: 'Halibarn', pts: 1619.25, stars: [['Anthony Davis', 254.25], ['Giannis Antetokounmpo', 217.25]] },
       lose: { team: "Karl-Anthony's Clowns", pts: 1512.75, stars: [['Karl-Anthony Towns', 260.5], ['Devin Booker', 199.75]] },
       badge: 'Clean win', badgeDark: true,
-      roast: 'Halibarn put up the top score of the week, <b>1,619.25</b>, and went 9-0 in all-play. Anthony Davis, Giannis and LeBron (<b>93.5</b>) all actually played, which makes the old name Blocked By James a historical document. The Clowns had <b>1,512.75</b>, the third-biggest score in the league, 7-2 in all-play, and still lost, because they were down 161.0 going into Nov 15 and a 273.75 final day only clawed back 54.5 of it. Joel Embiid gave them <b>72.25</b> for the week and Derik Queen <b>47.25</b>. They are 1-3. Josh\'s Finest Team had a better excuse; this one just has a worse record.' },
+      roast: 'Fine, Halibarn won, with the top score of the week (<b>1,619.25</b>) and a 9-0 all-play. Now look at how. Anthony Davis and Giannis gave it <b>471.5</b>, and then the roster fell off a cliff: LeBron <b>93.5</b> (tenth-best on his own team, behind Nembhard, Ausar Thompson and Dybantsa), Dillon Brooks <b>54.0</b>, Norman Powell <b>44.0</b>, Cedric Coward <b>29.5</b> and Jrue Holiday <b>19.75</b>. Those last four scored <b>147.25</b> combined, which is less than Kyrie Irving did alone (157.0). It got <b>159.75</b> on Nov 13 and lost the day by 169.75, then lost the final day too (219.25 to 273.75). It beat the Clowns by only <b>106.5</b> and is 3-1 with the fifth-most points in the league, 530.75 behind DaddyDunco. Blocked By James was a better name for a team that keeps paying for stars and filling the rest of the bench with decorations.' },
     { win: { team: 'Edgelord', pts: 1600.75, stars: [['Alperen Sengun', 288.25], ['Cameron Boozer', 191]] },
       lose: { team: 'Wild Metti', pts: 1160.25, stars: [['Pascal Siakam', 214.75], ['Cooper Flagg', 203.75]] },
       badge: 'Demolition', badgeDark: false,
@@ -125,7 +125,7 @@ const WEEK = {
     { team: '****', rec: '3-1', pf: 5598, ap: '5-4', note: 'Down 44.75 into the last day and won anyway. Wemby is the whole franchise' },
     { team: 'Neck like Charlie Kirk', rec: '2-2', pf: 5580.25, ap: '3-6', note: 'Lost by 34.25 after leading into the final day. 1.50 points ahead of Edgelord in total' },
     { team: 'Edgelord', rec: '4-0', pf: 5578.75, ap: '8-1', note: 'Only 4-0, fourth in points. The spreadsheet is running things' },
-    { team: 'Halibarn', rec: '3-1', pf: 5279, ap: '9-0', note: 'Best score of the week. Giannis, AD and LeBron all showed up. Suspicious' },
+    { team: 'Halibarn', rec: '3-1', pf: 5279, ap: '9-0', note: 'Best score of the week off two stars and a bottom four that scored 147.25. Fifth in points, 530.75 behind first' },
     { team: 'Fourth time Cucky', rec: '2-2', pf: 5257.75, ap: '2-7', note: 'Two big days, three days under 93. Cucky on schedule' },
     { team: "Karl-Anthony's Clowns", rec: '1-3', pf: 5163.75, ap: '7-2', note: '1,512.75 and a loss. All-play 7-2 and a 1-3 record. Names do not fix this' },
     { team: 'Shaqramento Wings', rec: '2-2', pf: 5066.75, ap: '6-3', note: 'SGA 230.0, fourth-best score, a win by 214.75. Eighth in points anyway' },
@@ -179,7 +179,7 @@ render(WEEK);
 (async () => {
   const a = document.getElementById('pdfdl');
   if (!a) return;
-  const url = '/_blob/30ef201671925428798b2120e197a6d9';
+  const url = '/_blob/aa99651078aa4b7fba3d000566f5e3ee';
   a.href = url; a.target = '_blank'; a.rel = 'noopener';
   let dl = null;
   try { dl = await claude.use('downloads'); } catch (err) {}
