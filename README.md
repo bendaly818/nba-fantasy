@@ -6,3 +6,4 @@ Scheduled job (Mon 20:00 UTC) roasts the finished ESPN matchup week and republis
 - `scripts/render_pdf.js in.html out.pdf` - renders the 1080x1500 dark PDF with Playwright.
 - `history/weekN.html` and `history/matchup-roast-weekN.pdf` - each week's published page and PDF.
 - `history/jokes.md` - joke log; read before writing, append after.
+- `history/preferences.md` - owner tone/format preferences; read before writing.
