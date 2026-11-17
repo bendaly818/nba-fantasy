@@ -17,3 +17,4 @@
 - Awards: Wemby POW (3.0 over Sengun); Blowout Dunco/Vishal; Hard Luck Clowns; Schedule Gods DaddyDunco (4-5, beat Neck's score by 0.75); Biggest Day Edgelord; Floor Vishal.
 - Live section: renderer has none; live week 5 scores were all 0.0 at run time, not published.
 - Halibarn re-roast (requested): bottom four (Brooks 54.0, Powell 44.0, Coward 29.5, Holiday 19.75) = 147.25 < Kyrie 157.0; LeBron 10th on own team; lost Nov 13 by 169.75 and final day; 530.75 behind Dunco in PF.
+- Raunchier pass (requested, all-male group): limp/premature-finish/railed innuendo on Halibarn bottom four, Edgelord/Metti, Neck, Cucky, Vishal. Roster-and-manager-choices only, no real-player sexualising.
